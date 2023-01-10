@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+        }
+
+        .food {
+            border: 5px solid burlywood;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .food img {
+            width: 75%;
+        }
+
+        /* media-query */
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width:577px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-1</h2>
+            <h4>price: 100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p>
+
+            <button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-2</h2>
+            <h4>price: 200</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p>.<button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-3</h2>
+            <h4>price: 300</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p> commodi.<button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-4</h2>
+            <h4>price: 400</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-5</h2>
+            <h4>price: 500</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-6</h2>
+            <h4>price: 600</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p>button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-7</h2>
+            <h4>price: 700</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-8</h2>
+            <h4>price: 800</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-9</h2>
+            <h4>price: 900</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-10</h2>
+            <h4>price: 1000</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-11</h2>
+            <h4>price: 1100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <h2>Item-12</h2>
+            <h4>price: 1200</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum recusandae necessitatibus dicta, hic enim
+                quod quisquam non veritatis. Tenetur quasi dignissimos esse quas distinctio. Quia dignissimos quos
+                veniam accusantium eius.</p><button class="order">Order Now</button>
+        </div>
+    </div>
+</body>
+
+</html>
